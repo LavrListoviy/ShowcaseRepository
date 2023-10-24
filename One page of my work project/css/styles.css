@@ -1,0 +1,694 @@
+@font-face {
+    font-family: 'Saira';
+    src: local('Saira Bold'), local('Saira-Bold'),
+        url('../fonts/Saira-Bold.woff2') format('woff2'),
+        url('../fonts/Saira-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Saira';
+    src: local('Saira Black'), local('Saira-Black'),
+        url('../fonts/Saira-Black.woff2') format('woff2'),
+        url('../fonts/Saira-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Saira';
+    src: local('Saira Regular'), local('Saira-Regular'),
+        url('../fonts/Saira-Regular.woff2') format('woff2'),
+        url('../fonts/Saira-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Saira';
+    src: local('Saira Medium'), local('Saira-Medium'),
+        url('../fonts/Saira-Medium.woff2') format('woff2'),
+        url('../fonts/Saira-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Saira';
+    src: local('Saira ExtraBold'), local('Saira-ExtraBold'),
+        url('../fonts/Saira-ExtraBold.woff2') format('woff2'),
+        url('../fonts/Saira-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Saira';
+    src: local('Saira ExtraLight'), local('Saira-ExtraLight'),
+        url('../fonts/Saira-ExtraLight.woff2') format('woff2'),
+        url('../fonts/Saira-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Saira';
+    src: local('Saira SemiBold'), local('Saira-SemiBold'),
+        url('../fonts/Saira-SemiBold.woff2') format('woff2'),
+        url('../fonts/Saira-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Saira';
+    src: local('Saira Thin'), local('Saira-Thin'),
+        url('../fonts/Saira-Thin.woff2') format('woff2'),
+        url('../fonts/Saira-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Saira';
+    src: local('Saira Light'), local('Saira-Light'),
+        url('../fonts/Saira-Light.woff2') format('woff2'),
+        url('../fonts/Saira-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Saira', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    font-style: normal;
+    color: #444444;
+    border: none;
+    background-color: transparent;
+}
+
+button {
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+    text-align: start;
+}
+
+.container {
+    max-width: 1340px;
+    margin: auto;
+    margin-left: 260px;
+    margin-right: 30px;
+    padding-left: 20px;
+}
+
+.page__title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 31px;
+    color: #444444;
+    margin-bottom: 7px;
+}
+
+.header {
+    max-width: 1340px;
+    margin: auto;
+    padding: 10px 20px;
+    box-shadow: 0px 0px 11px -3px #AAA4AC;
+    margin-bottom: 50px;
+    margin-left: 14%;
+    margin-right: 5%;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1340px;
+    margin: auto;
+}
+
+.header__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.header__logo {
+    font-size: 0;
+}
+
+.title {
+    margin: auto;
+    text-align: center;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 47px;
+    color: #444444;
+    margin-bottom: 50px;
+}
+
+.form {
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 80px;
+}
+
+.form__input {
+    width: 100%;
+    border: 0.5px solid #868686;
+    border-radius: 10px;
+    height: 45px;
+    color: #444444;
+    padding-left: 25px;
+    padding-right: 25px;
+    box-sizing: border-box;
+    outline: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.form__input.error {
+    border: 1px solid #FF0000 !important;
+}
+
+.form__input:focus-within {
+    border: 1px solid #6A398A;
+}
+
+.form__label {
+    position: relative;
+    user-select: none;
+    cursor: pointer;
+}
+
+.form__container {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.form__placeholder {
+    position: absolute;
+    left: 25px;
+    top: 6px;
+    transition: 0.3s;
+    background-color: #FFFFFF;
+    color: #DDDDDD;
+    font-weight: 400;
+    font-weight: 18;
+    border-radius: 2px;
+}
+
+.form__error {
+    position: absolute;
+    top: -22px;
+    right: 5px;
+    color: #FF0000;
+    font-size: 12px;
+    transition: 0.3s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.form__error.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.form__placeholder.active {
+    left: 5px;
+    top: -35px;
+    color: #444444;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.select__title {
+    user-select: none;
+}
+
+.form__submit {
+    background: #6A398A;
+    border-radius: 10px;
+    width: 100%;
+    padding: 9px;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.form__submit:hover {
+    background-color: #A26BB7;
+}
+
+.aside__menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 230px;
+    background: linear-gradient(180deg, #9854AA 0%, #683888 41.67%, #391C67 82.81%);
+}
+
+.aside__nav {
+    padding-top: 140px;
+}
+
+.aside__link {
+    font-size: 20px;
+    line-height: 31px;
+    color: #FFFFFF;
+    transition: 0.3s;
+    padding: 10px;
+    display: inline-block;
+    width: 100%;
+}
+
+.aside__link:hover {
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.aside__link.active {
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.label__password {
+    display: flex;
+    justify-content: space-between;
+}
+
+.js-show__password {
+    display: none;
+}
+
+.js-show__password.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.js-hidden__password {
+    display: none;
+}
+
+.js-hidden__password.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.password__controls {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.password__controls button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    height: 45px;
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: 0.3s;
+}
+
+.password__controls button:hover {
+    background-color: #dedede;
+}
+
+.placeholder__title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 31px;
+    color: #444444;
+    position: absolute;
+    top: -35px;
+    left: 5px;
+    user-select: none;
+}
+
+.select__container, .range__container {
+    position: relative;
+}
+/* Очистка стилей для ползунка */
+
+input[type="range"].pressed::-webkit-slider-thumb {
+  background-color: #391C67;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background: #9854AA;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 65%;
+  height: 10px;
+  border-radius: 5px;
+  background: #ddd; /* Задает цвет фона полоски */
+  background-size: 50% 100%; /* Регулирует ширину прозрачной области полоски */
+  background-repeat: no-repeat; /* Отключает повторение фона */
+  background-position: 0% 50%; /* Задает положение фона */
+  outline: none;
+  margin: 20px 0;
+}
+#filter__button{
+    padding-bottom: 10px;
+}
+
+#summary__button{
+    padding-bottom: 45px;
+}
+
+.select__created {
+    max-width: 300px;
+    box-sizing: border-box;
+}
+
+.select {
+    margin-bottom: 55px;
+    position: relative;
+    color: #444444;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #FFFFFF;
+    padding: 10px 20px;
+    border: 0.5px solid #868686;
+    border-radius: 10px 10px 0px 0px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 3;
+}
+
+.select::after {
+    content: '';
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 16px 9px;
+    background-image: url('../img/select_arrow.svg');
+    width: 16px;
+    height: 9px;
+    transition: 0.3s;
+}
+
+.select.active {
+    border-bottom: 0.5px solid #FFFFFF;
+}
+
+.select.active::after {
+    transform: rotate(180deg);
+}
+
+.select__dropdown {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 52px;
+    left: -1px;
+    transition: 0.3s;
+    width: 100%;
+    border-bottom: 0.5px solid #868686;
+    border-right: 0.5px solid #868686;
+    border-left: 0.5px solid #868686;
+    background-color: #FFFFFF;
+    padding-bottom: 20px;
+}
+
+.select.active>.select__dropdown {
+    opacity: 1;
+    visibility: visible;
+}
+
+.select__input {
+    display: none;
+}
+
+.select__label {
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+    display: block;
+    user-select: none;
+}
+
+.select__label:hover {
+    color: #DDDDDD;
+}
+
+.select__input:checked+.select__label {
+    color: #DDDDDD
+}
+
+.select__item {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.password__controllers__tooltip {
+    position: absolute;
+    top: -60px;
+    background-color: #683888;
+    color: #FFFFFF;
+    opacity: 0;
+    visibility: hidden;
+    user-select: none;
+    transition: 0.5s;
+    white-space: nowrap;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.password__controls button:hover>.password__controllers__tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+
+.table {
+    width: 100%;
+}
+
+.table__head {
+    background-color: #6A398A;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 0.1fr 0.2fr 1fr 1fr 1fr;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    gap: 7px;
+}
+
+.table__head th {
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+    text-align: start;
+}
+
+.table__row {
+    display: grid;
+    grid-template-columns: 0.1fr 0.2fr 1fr 1fr 1fr;
+    padding: 10px;
+    border-bottom: 0.5px solid #B3B3B3;
+    gap: 7px;
+}
+
+.table__row td {
+    text-align: left;
+}
+
+.table__link {
+    transition: 0.3s;
+}
+
+.table__link:hover {
+    color: #391C67;
+    text-decoration: underline;
+}
+
+.form__checkbox {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.form__checkbox input {
+    display: none;
+}
+
+.form__checkbox input+.form__checkbox__span {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    border: 1px solid #9C9C9C;
+    border-radius: 2px;
+    text-align: center;
+    transition: 0.3s;
+    top: 5px;
+}
+
+.form__checkbox__label {
+    display: flex;
+    align-items: center;
+    position: relative;
+    border: none;
+    background-color: transparent;
+    padding-left: 23px;
+    white-space: nowrap;
+    cursor: pointer;
+    z-index: 2;
+    user-select: none;
+    cursor: pointer;
+}
+
+.form__checkbox input:checked+.form__checkbox__span::before {
+    opacity: 1;
+}
+
+.form__checkbox input+.form__checkbox__span:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    opacity: 0;
+    transition: opacity .2s ease-in-out;
+    content: '';
+    background-color: transparent;
+    background-image: url('../img/checkbox.svg');
+    background-repeat: no-repeat;
+    background-size: 15px 20px;
+    height: 18px;
+    width: 17px;
+    z-index: 1;
+    transition: 0.3s;
+}
+
+.main__checkbox {
+    border: 1px solid #FFFFFF !important;
+    top: 2px !important;
+}
+
+.user__info p b {
+    font-weight: 500;
+}
+
+.user__info p {
+    margin-bottom: 15px;
+}
+
+.user__info {
+    column-count: 2;
+    padding: 32px 45px;
+    background: #F6F6F6;
+}
+
+.detail__btn {
+    background: #6A398A;
+    border-radius: 10px 10px 0px 0px;
+    padding: 9px 10px;
+    width: 100%;
+    text-align: center;
+    max-width: 320px;
+    transition: 0.3s;
+    color: #FFFFFF;
+}
+
+.detail__btn:hover {
+    background-color: #A26BB7;
+}
+
+.form__detail {
+    margin-bottom: 30px;
+    gap: 20px;
+    display: flex;
+}
+
+.search__input {
+    max-width: 500px;
+}
+
+.search__form {
+    margin-bottom: 20px;
+}
+
+.selects__row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.logs__header {
+    background-color: #6A398A;
+    padding: 10px 15px;
+    color: #FFFFFF;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.logs__header span {
+    color: #FFFFFF;
+}
+
+.logs__row {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: #444444;
+    padding: 4px 15px;
+    border-bottom: 0.5px solid #B3B3B3;
+}
+
+.inputs__list .form__checkbox__label {
+    padding-left: 30px;
+}
+
+.inputs__list {
+    margin-bottom: 40px;
+}
+
+.permissions__form .form__submit {
+    max-width: 500px;
+}
+
+.permissions__container {
+    max-width: 500px;
+    margin: auto;
+}
